@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgrey;
+            margin: 10px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        nav{
+            background-color: rgb(168, 155, 155);
+            box-shadow: 4px 6px 6px 1px rgba(0, 0, 0, 0.445);
+            margin: 5px;
+            padding: 2px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 8px 9px 11px 0px rgba(0, 0, 0, 0.377);
+
+;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding: 4px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(161, 159, 159);
+        }
+
+        section > p{
+            font-weight: bolder;
+            font-size: 35px;
+            
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            background-color: aliceblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgba(218, 121, 209, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }    
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esportes, Politica e Tecnologia</p>
+        </section>
+        <section id="noticias"></section>
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsa vitae animi consectetur deleniti aliquam aperiam quae libero soluta perferendis qui natus autem suscipit, recusandae iste ipsum quia, placeat nam.</p>
+                <aside>
+                    <p>Artigo escrito por José da Sílva</p>
+                </aside>
+            </article>
+    </main>
+    <footer>
+        <P>Desenvolvido por Víctor de Oliveira</P>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
