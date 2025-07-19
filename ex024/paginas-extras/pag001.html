@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgrey
+        }
+
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr >td{
+            padding: 10px;
+            border: 1px solid black
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+
+        .vermelho{
+            background-color: rgba(255, 0, 0, 0.925);
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+
+
+        </colgroup>
+        <caption>Cadastro de Pessoas</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Víctor de Oliveira</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Rogerinho</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Mecânico</td>
+        </tr>
+
+        <tr>
+            <td>Creuza</td>
+            <td>F</td>
+            <td>65</td>
+            <td>Aposentada</td>
+        </tr>
+
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Policial</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
