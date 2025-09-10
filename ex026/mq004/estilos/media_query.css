@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Todas as midias */
+
+/*  Typical Device Breakpoints
+pequenos dispositivos: 320 - 480px
+Celulares Padrão: 481px - 767px
+Tablet: 768px - 1024px
+Desktop: 1025px - 1280px
+GRANDES TELAS: 1281px - 1536px
+Ultra-wide/4k: 1536px+
+*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+        width: 603px;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main::after{
+        content: 'Impressão feita por Victor de Oliveira';
+        color: rgb(0, 0, 0);
+        text-decoration: overline;
+    }
+    img#print{
+        display: block;
+        margin: auto;
+    }
+    img#phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#pc{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tv{
+        display: block;
+        margin: auto;
+    }
+    
+}
