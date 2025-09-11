@@ -11,9 +11,23 @@ header {
     background-image: linear-gradient(to left, black, rgb(63, 25, 3));
 }
 
+
+span#burguer{
+
+    color: white;
+    background-color: rgb(51, 23, 0);
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
 header h1 {
-    position: relative;
-    right: 12px;
+
     text-shadow: 1px 1px rgb(255, 255, 255);
     text-align: center;
     color: rgba(255, 255, 255, 0.562);
@@ -23,7 +37,7 @@ header h1 {
 ul li {
     display: block;
     margin: auto;
-    margin-right: 30px;
+
 
 }
 
@@ -42,12 +56,14 @@ a:hover {
     color: rgba(78, 28, 8, 0.877);
 }
 
-
+menu{
+    display: none;
+}
 
 menu ul {
     list-style-type: none;
     text-align: center;
-    padding: 20px 0px 0px 0px;
+
 }
 
 body{

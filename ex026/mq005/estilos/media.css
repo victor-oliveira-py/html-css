@@ -11,32 +11,49 @@ Ultra-wide/4k: 1536px+
 */
 
 @media screen and (min-width:682px) and (max-width: 885px) {
-    ul li{
-        display: inline-block;
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
 
     }
-    
-    main{
+
+    ul li {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    main {
         width: 75vw;
     }
 
-    li a{
+    li a {
         border-radius: 10px;
         margin-bottom: 20px;
     }
 }
 
-@media screen and (min-width:886px){
-    ul li{
-        display: inline-block;
-
+@media screen and (min-width:886px) {
+    span#burguer {
+        display: none;
     }
 
-    main{
+    menu {
+        display: block;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    main {
         width: 700px;
     }
 
-    li a{
+    li a {
         border-radius: 10px;
         margin-bottom: 20px;
     }
