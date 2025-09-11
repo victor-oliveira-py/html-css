@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Todas as midias */
+
+/*  Typical Device Breakpoints
+pequenos dispositivos: 320 - 480px
+Celulares Padrão: 481px - 767px
+Tablet: 768px - 1024px
+Desktop: 1025px - 1280px
+GRANDES TELAS: 1281px - 1536px
+Ultra-wide/4k: 1536px+
+*/
+
+@media screen and (min-width:682px) and (max-width: 885px) {
+    ul li{
+        display: inline-block;
+
+    }
+    
+    main{
+        width: 75vw;
+    }
+
+    li a{
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:886px){
+    ul li{
+        display: inline-block;
+
+    }
+
+    main{
+        width: 700px;
+    }
+
+    li a{
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
