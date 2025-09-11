@@ -71,15 +71,15 @@ body{
 }
 
 main {
-    width: 90vw;
+    width: 90%;
     background-color: darkgrey;
     margin: auto;
-    padding: 0px 10px;
+
 
 }
 
 article{
-    width: 500px;
+    width: 300px;
     margin: auto;
     padding-bottom: 20px;
 }
