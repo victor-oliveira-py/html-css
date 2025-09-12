@@ -20,6 +20,10 @@ Ultra-wide/4k: 1536px+
 
     }
 
+    a:hover{
+        transition: transform 0.3s;
+        transform: translate(-3px,-3px);
+    }
 
     article{
         width: 400px;
@@ -48,6 +52,12 @@ Ultra-wide/4k: 1536px+
     menu {
         display: block;
     }
+
+    a:hover{
+        transition: transform 0.3s;
+        transform: translate(-3px,-3px);
+    }
+
 
     article{
         width: 600px;
