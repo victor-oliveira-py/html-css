@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="estilos/media.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
@@ -95,6 +95,16 @@
         <p>Desenvolvido por Victor de Oliveira</p>
     </footer>
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }
+            else{
+                menu.style.display = 'none'
+            }
+        }
+
+
         function clickMenu() {
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
