@@ -10,7 +10,7 @@ GRANDES TELAS: 1281px - 1536px
 Ultra-wide/4k: 1536px+
 */
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width:768px){
     span#burguer {
         display: none;
     }
@@ -26,41 +26,7 @@ Ultra-wide/4k: 1536px+
     }
 
     article{
-        width: 500px;
-    }
-
-    ul li {
-        display: inline-block;
-        margin-top: 20px;
-    }
-
-    main {
-        width: 600px;
-    }
-
-    li a {
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width:1025px) {
-    span#burguer {
-        display: none;
-    }
-
-    menu {
-        display: block;
-    }
-
-    a:hover{
-        transition: transform 0.3s;
-        transform: translate(-3px,-3px);
-    }
-
-
-    article{
-        width: 600px;
+        width: 650px;
     }
 
     ul li {
@@ -77,3 +43,5 @@ Ultra-wide/4k: 1536px+
         margin-bottom: 20px;
     }
 }
+
+

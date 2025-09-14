@@ -74,12 +74,11 @@ main {
     width: 93.3%;
     background-color: darkgrey;
     margin: auto;
-
+    padding: 0px 10px 10px 10px;
 
 }
 
 article{
-    width: 274.8px;
     margin: auto;
     padding-bottom: 20px;
 }
