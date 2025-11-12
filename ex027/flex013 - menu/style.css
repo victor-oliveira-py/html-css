@@ -47,10 +47,10 @@ header > nav > a {
 }
 
 header > nav > a:hover{
-
+    transform: translateY(-3px);
     background-color: white;
     color: black;
-    transition: background-color .5s;
+    transition: background-color .5s, transform 0.5s;
 }
 
 main{
