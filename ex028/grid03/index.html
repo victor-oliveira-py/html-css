@@ -7,34 +7,42 @@
     <style>
         div.container {
             display: grid;
-            height: 250px;
-            grid-template: repeat(3,auto)/ repeat(3,auto);
-            border: 3px solid blue;
-            gap: 10px;
-            place-items: start center;
-            place-content: space-between end;
-
+            grid-template: repeat(4, 1fr)/ repeat(3,100px)
         }
 
-        div.item {
+        .item {
             border: 3px solid red;
- 
-            padding: 5px;
+            padding: 10px;
+        }
+        
+        .caixa1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .caixa2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .caixa3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
+        <div class="item caixa1">A</div>
+        <div class="item caixa2">B</div>
+        <div class="item caixa3">C</div>
     </div>
 </body>
 </html>

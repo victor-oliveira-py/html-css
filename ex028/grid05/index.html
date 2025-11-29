@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticas Grid Layout</title>
+    <style>
+        /* Simplificação total (Grid-area) */
+        /* Grid-area: row-start/column-start/row-end/column-end */
+        .container {
+            display: grid;
+            grid-template: repeat(3,100px)/ repeat(4,1fr);
+            border: 3px solid red;
+            gap: 5px;
+        }
+
+        .item {
+            border: 3px solid blue;
+        }
+
+        .caixa1 {
+            background-color: rgba(255, 0, 0, 0.24);
+            grid-area: 1/1/2/5;
+        }
+
+        .caixa2 {
+            background-color: rgba(0, 128, 0, 0.144);
+            grid-area: 2/1/4/3;
+        }
+
+        .caixa3 {
+            background-color: rgba(0, 0, 255, 0.205);
+            grid-area: 2/3/4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item caixa1">Caixa 01</div>
+        <div class="item caixa2">Caixa 02</div>
+        <div class="item caixa3">Caixa 03</div>
+    </div>
+    
+</body>
+</html>
