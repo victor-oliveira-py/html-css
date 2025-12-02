@@ -1,21 +1,25 @@
 @charset "UTF-8";
 
 * {
-    margin: 5px;
+    box-sizing: border-box;
+    margin: 0px;
     padding: 0px;
 }
 
 .container {
+    width: 100vw;
+    height: 100vh;
+    gap: 5px;
     display: grid;
-    grid-template: repeat(4, auto)/ 2fr 1fr;
-    border: 3px solid black;
+    grid-template: 80px 40px 1fr 40px/ 1fr 200px;
     align-items: start;
     justify-items: center;
 }
 
 img {
-    width: 400px;
-    
+    display: block;
+    width: 150px;
+    margin: auto;
 }
 
 header {
@@ -32,7 +36,7 @@ nav {
 a:hover{
     background-color: lightgreen;
     border: 2px solid rgba(0, 0, 0, 0.575);
-    transition: background-color 0.8s , border 0.5s;
+    transition: background-color 0.8s ;
 }
 
 nav > a {
@@ -42,6 +46,7 @@ nav > a {
 }
 
 footer {
+    margin: 10px;
     grid-area: 4/1/-1/-1;
     text-align: center;
 
